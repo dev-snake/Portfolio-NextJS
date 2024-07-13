@@ -28,19 +28,22 @@ export default function Header() {
 
 			<NavbarContent className="sm:hidden pr-3" justify="center">
 				<NavbarBrand>
-					<AcmeLogo />
+					<h1 className="font-ProtestGuerrilla text-2xl tracking-[1.8px]">DEV_SNAKE</h1>
 				</NavbarBrand>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarBrand>
-					<AcmeLogo />
+					<h1 className="font-ProtestGuerrilla text-2xl tracking-[1.8px]">DEV_SNAKE</h1>
 				</NavbarBrand>
 			</NavbarContent>
-			<NavbarContent className="hidden  sm:flex gap-4 " justify="end">
+			<NavbarContent className="hidden  sm:flex gap-2 " justify="end">
 				{menuItems.map((item, index) => (
 					<NavbarMenuItem key={`${item}-${index}`} className="mr-8">
-						<Link className="w-full text-white text-center font-light" size="md">
+						<Link
+							className="w-full text-white text-center font-ProtestGuerrilla text-lg tracking-[1.8px] uppercase"
+							size="md"
+						>
 							{item}
 						</Link>
 					</NavbarMenuItem>
