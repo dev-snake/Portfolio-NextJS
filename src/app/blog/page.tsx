@@ -1,3 +1,9 @@
+import { redirect } from 'next/navigation';
 export default function Blog() {
-	return <h1>Page Blog</h1>;
+	console.log(redirect);
+	return (
+		<>
+			<button type="button">Dashboard</button>
+		</>
+	);
 }

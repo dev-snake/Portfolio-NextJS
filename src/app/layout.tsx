@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import './styles/globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import { NextUIProvider } from '@nextui-org/react';
+import Header from './components/header/header';
+// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Portfolio App',
@@ -16,10 +17,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<nav>Header</nav>
-				<main>{children}</main>
-				<footer>footer</footer>
+			<body>
+				<NextUIProvider>
+					<header className="w-full  bg-transparent">
+						<nav className="max-w-8xl mx-auto">
+							<Header />
+						</nav>
+					</header>
+					<main>{children}</main>
+					<footer>footer</footer>
+				</NextUIProvider>
 			</body>
 		</html>
 	);
