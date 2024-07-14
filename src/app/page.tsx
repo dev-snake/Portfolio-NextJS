@@ -4,8 +4,10 @@ import { BackgroundBeams } from './components/ui/background-beams';
 import { FlipWords } from './components/ui/flip-words';
 import { SparklesCore } from './components/ui/sparkles';
 import Photos from './components/photos/Photos';
+import Clubs from './components/Clubs/Clubs';
+import DesignInfor from './components/DesignInfor/DesignInfor';
 export default function Home() {
-	const words = ['RONALDO', 'CR7', 'SIUU', 'GOAT'];
+	const words: string[] = ['RONALDO', 'CR7', 'SIUU', 'GOAT'];
 	return (
 		<>
 			<div className="h-screen rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -26,6 +28,8 @@ export default function Home() {
 				<BackgroundBeams />
 			</div>
 			<Photos />
+			<Clubs />
+			<DesignInfor />
 		</>
 	);
 }
