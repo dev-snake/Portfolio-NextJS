@@ -17,7 +17,7 @@ export default function Clubs() {
 					Clubs used to complete
 				</h1>
 				<div className="w-[1300px]">
-					<div className="grid grid-cols-5 gap-3 relative z-50 w-full">
+					<div className="grid sm:grid-cols-5 gap-3 relative z-50 w-full">
 						<Card title="Sporting Lisbon" icon={<img src={spr.src} alt="" />}>
 							<CanvasRevealEffect
 								animationSpeed={5.1}
@@ -78,7 +78,7 @@ const Card = ({
 		<div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className=" border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] border-[1px] border-white shadow-lg "
+			className=" border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative border-[1px] border-white shadow-lg "
 		>
 			<AnimatePresence>
 				{hovered && (
