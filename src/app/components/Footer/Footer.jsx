@@ -19,8 +19,8 @@ export default function Footer() {
 						<FontAwesomeIcon icon={faDiscord} className="p-2 text-white " />
 					</Button>
 				</div>
-				<p className="text-center mt-10 font-ProtestGuerrilla uppercase tracking-[1.9px] py-4">
-					© Copyright DEV_SNAKE
+				<p className="text-center mt-10  py-1 tracking-[1.6px] text-[1rem]">
+					©Copyright dev_snake
 				</p>
 			</div>
 		</div>

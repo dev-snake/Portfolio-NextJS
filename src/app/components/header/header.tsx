@@ -48,10 +48,7 @@ export default function Header() {
 			<NavbarContent className="hidden  sm:flex gap-2 " justify="end">
 				{menuItems.map(({ label, path }, index) => (
 					<NavbarMenuItem key={`${label}-${index}`} className="mr-8 ">
-						<Link
-							href={path}
-							className="w-full text-white text-center font-ProtestGuerrilla text-lg tracking-[1.8px] uppercase "
-						>
+						<Link href={path} className="w-full text-white text-center  text-[1rem] ">
 							{label}
 						</Link>
 					</NavbarMenuItem>

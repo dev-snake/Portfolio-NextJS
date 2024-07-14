@@ -15,8 +15,8 @@ export default function DesignInfor() {
 			</h1>
 			<div className="">
 				<TextRevealCard text="WHO IS DEV_SNAKE ?" revealText="I'M DANG VAN HAU.">
-					<TextRevealCardTitle className="font-ProtestGuerrilla tracking-[1.8px]">
-						WHO DESIGNED THIS WEBSITE ?
+					<TextRevealCardTitle className="capitalize tracking-[1.8px]">
+						Who Design This Website ?
 					</TextRevealCardTitle>
 					<TextRevealCardDescription>
 						Designed by <span className="">dev_snake</span>
